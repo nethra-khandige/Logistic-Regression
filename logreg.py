@@ -24,8 +24,9 @@ yhat = LR.predict(X_test)# gives churn rate
 u=confusion_matrix(y_test, yhat)
 print(u)
 acc=(u[0,0]+u[1,1])/40
-print(acc)
+print("The accuracy is:",acc)
 
+#'employ
 churn_df = df[['ed', 'employ', 'equip', 'callcard','wireless','age','address','longmon','confer']]
 churn_df['employ'] = churn_df['employ'].astype('int')
 X = np.asanyarray(churn_df[['ed', 'employ', 'equip', 'callcard','wireless','age','address','longmon','confer']])
@@ -40,9 +41,9 @@ yhat = LR.predict(X_test)# gives churn rate
 u=confusion_matrix(y_test, yhat)
 print(u)
 acc=(u[0,0]+u[1,1])/40
-print(acc)
+print("The accuracy is:",acc)
 
-
+#equip
 churn_df = df[['ed', 'employ', 'equip', 'callcard','wireless','age','address','longmon','confer','cardmon']]
 churn_df['equip'] = churn_df['equip'].astype('int')
 X = np.asanyarray(churn_df[['ed', 'employ', 'equip', 'callcard','wireless','age','address','longmon','confer','cardmon']])
@@ -57,9 +58,9 @@ yhat = LR.predict(X_test)# gives churn rate
 u=confusion_matrix(y_test, yhat)
 print(u)
 acc=(u[0,0]+u[1,1])/40
-print(acc)
+print("The accuracy is:",acc)
 
-
+#callcard
 churn_df = df[['ed', 'employ', 'equip', 'callcard','wireless','age','address','longmon','confer','cardmon']]
 churn_df['callcard'] = churn_df['callcard'].astype('int')
 X = np.asanyarray(churn_df[['ed', 'employ', 'equip', 'callcard','wireless','age','address','longmon','confer','cardmon']])
@@ -74,9 +75,9 @@ yhat = LR.predict(X_test)# gives churn rate
 u=confusion_matrix(y_test, yhat)
 print(u)
 acc=(u[0,0]+u[1,1])/40
-print(acc)
+print("The accuracy is:",acc)
 
-
+#wireless
 churn_df = df[['ed', 'employ', 'equip', 'callcard','wireless','age','address','longmon','confer','cardmon','tollten']]
 churn_df['wireless'] = churn_df['wireless'].astype('int')
 X = np.asanyarray(churn_df[['ed', 'employ', 'equip', 'callcard','wireless','age','address','longmon','confer','cardmon','tollten']])
@@ -91,7 +92,7 @@ yhat = LR.predict(X_test)# gives churn rate
 u=confusion_matrix(y_test, yhat)
 print(u)
 acc=(u[0,0]+u[1,1])/40
-print(acc)
+print("The accuracy is:",acc)
 
 
 
