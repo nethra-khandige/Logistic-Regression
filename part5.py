@@ -1,3 +1,11 @@
+import pandas as pd
+import pylab as pl
+import numpy as np
+import scipy.optimize as opt
+from sklearn import preprocessing
+%matplotlib inline 
+import matplotlib.pyplot as plt
+
 #callcard
 churn_df = df[['ed', 'employ', 'equip', 'callcard','wireless','age','address','longmon','confer','cardmon']]
 churn_df['callcard'] = churn_df['callcard'].astype('int')
